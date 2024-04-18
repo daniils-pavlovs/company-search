@@ -1,0 +1,11 @@
+<div class="search-results">
+    <h2>Search Results</h2>
+    <mat-list *ngFor="let result of searchResults.items">
+        <mat-list-item>
+            <span matListItemTitle><a [routerLink]="['/company-details', result.company_number]">{{ result.title
+                    }}</a></span>
+            <span matListItemLine>{{ result.description}}</span>
+            <span matListItemLine>{{ result.address_snippet}}</span>
+        </mat-list-item>
+    </mat-list>
+</div>

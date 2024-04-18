@@ -1,0 +1,6 @@
+<mat-form-field appearance="fill">
+    <input type="search" matInput placeholder="Search" [formControl]="searchbox">
+    <button mat-button matSuffix mat-stroked-button aria-label="search" (click)="search( $event)">
+        <mat-icon>search</mat-icon> Search
+    </button>
+</mat-form-field>

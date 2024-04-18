@@ -3,7 +3,7 @@ import { TestBed } from '@angular/core/testing';
 import { HttpClientTestingModule, HttpTestingController } from '@angular/common/http/testing';
 import { ApiService } from './api.service';
 import { environment } from '../../../environment';
-import { sampleSearchData } from '../dummy-data/dummy-response-data';
+import { sampleSearchData } from '../mocks/dummy-response-data';
 
 describe('ApiService', () => {
   let service: ApiService;
